@@ -1,0 +1,14 @@
+<h1>{{ product.name }}</h1>
+<p>Category: {{ product.category }}</p>
+<p>Cost: {{ product.cost }}</p>
+<p>Quantity: {{ product.quantity }}</p>
+      {% if product.name == 'smart watch' %}
+        <img src='https://ss7.vzw.com/is/image/VerizonWireless/zte-gizmowatch-blue?wid=700&hei=700&fmt=webp'width='300' height='300'>
+        <a href="{% url 'add_to_cart' product.id %}" class="btn btn-primary">Add Item</a>
+      {% elif product.name == 'desk' %}
+        <img src='https://cdn.casamare.us/wp-content/uploads/2020/12/atlas-79-l-shaped-home-office-furniture-desk-brown-black-4.jpg?x58639'width='300' height='300'>
+        <a href="{% url 'add_to_cart' product.id %}" class="btn btn-primary">Add Item</a>
+      {% elif product.name == 'yoga mat' %}
+        <img src='https://cdn.shopify.com/s/files/1/0575/2582/9838/products/yoga_mat_sky_1944x.png?v=1650457320'width='300' height='300'>
+        <a href="{% url 'add_to_cart' product.id %}" class="btn btn-primary">Add Item</a>
+      {% endif %}

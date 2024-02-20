@@ -1,0 +1,7 @@
+<h1>Home Use Products</h1>
+<ul>
+{% for product in products %}
+  <li>{{ product.name }} ({{ product.category.name }}), cost: {{ product.cost }}, quantity: {{ product.quantity }}</li>
+{% endfor %}
+</ul>
+<img src='https://cdn.shopify.com/s/files/1/0575/2582/9838/products/yoga_mat_sky_1944x.png?v=1650457320'width='300' height='300'>

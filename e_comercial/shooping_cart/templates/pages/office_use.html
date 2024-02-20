@@ -1,0 +1,7 @@
+<h1>Office Use Products</h1>
+<ul>
+{% for product in products %}
+  <li>{{ product.name }} ({{ product.category.name }}), cost: {{ product.cost }}, quantity: {{ product.quantity }}</li>
+{% endfor %}
+</ul>
+<img src='https://cdn.casamare.us/wp-content/uploads/2020/12/atlas-79-l-shaped-home-office-furniture-desk-brown-black-4.jpg?x58639'width='300' height='300'>

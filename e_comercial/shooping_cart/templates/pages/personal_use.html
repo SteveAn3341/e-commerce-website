@@ -1,0 +1,7 @@
+<h1>Personal Use Products</h1>
+<ul>
+{% for product in products %}
+  <li>{{ product.name }} ({{ product.category.name }}), cost: {{ product.cost }}, quantity: {{ product.quantity }}</li>
+{% endfor %}
+</ul>
+<img src='https://ss7.vzw.com/is/image/VerizonWireless/zte-gizmowatch-blue?wid=700&hei=700&fmt=webp'width='300' height='300'>
